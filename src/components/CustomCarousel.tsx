@@ -9,6 +9,7 @@ export const CenteredText = styled.div`
   font-size: 3em;
   height: 100%;
   h1 {
+    text-align: center;
     font-size: 3rem;
   }
 `
@@ -33,7 +34,13 @@ export default function CustomCarousel({ children }: CustomCarouselProps) {
   }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} fade variant='dark'>
+    <Carousel
+      activeIndex={index}
+      onSelect={handleSelect}
+      fade
+      variant='dark'
+      controls={false}
+    >
       {body}
     </Carousel>
   )

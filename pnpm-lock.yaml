@@ -3609,8 +3609,8 @@ packages:
       string-width: 4.2.3
     dev: false
 
-  /ansi-colors/4.1.1:
-    resolution: {integrity: sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==}
+  /ansi-colors/4.1.2:
+    resolution: {integrity: sha512-cEG18jjLG0O74o/33eEfnmtXYDEY196ZjL0eQEISULF+Imi7vr25l6ntGYmqS5lIrQIEeze+CqUtPVItywE7ZQ==}
     engines: {node: '>=6'}
     dev: false
 
@@ -3920,7 +3920,7 @@ packages:
     dependencies:
       '@babel/helper-module-imports': 7.16.7
       '@babel/types': 7.17.10
-      glob: 7.2.2
+      glob: 7.2.3
       lodash: 4.17.21
       require-package-name: 2.0.1
     dev: false
@@ -4318,7 +4318,7 @@ packages:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.2.0
+      tslib: 2.3.1
     dev: false
 
   /camelcase/5.3.1:
@@ -5220,7 +5220,7 @@ packages:
       debug: 3.2.7
       eol: 0.9.1
       get-port: 3.2.0
-      glob: 7.2.2
+      glob: 7.2.3
       is-valid-domain: 0.1.6
       lodash: 4.17.21
       mkdirp: 0.5.6
@@ -5443,7 +5443,7 @@ packages:
     resolution: {integrity: sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg==}
     engines: {node: '>=8.6'}
     dependencies:
-      ansi-colors: 4.1.1
+      ansi-colors: 4.1.2
     dev: false
 
   /entities/2.2.0:
@@ -6408,7 +6408,7 @@ packages:
       deepmerge: 4.2.2
       eslint: 7.32.0
       fs-extra: 9.1.0
-      glob: 7.2.2
+      glob: 7.2.3
       memfs: 3.4.1
       minimatch: 3.1.2
       schema-utils: 2.7.0
@@ -6641,7 +6641,7 @@ packages:
       chokidar: 3.5.3
       fs-exists-cached: 1.0.0
       gatsby-core-utils: 3.14.0
-      glob: 7.2.2
+      glob: 7.2.3
       lodash: 4.17.21
       micromatch: 4.0.5
     dev: false
@@ -7001,7 +7001,7 @@ packages:
       gatsby-react-router-scroll: 5.14.0_h6bduluijregplyki7jqq7jlni
       gatsby-telemetry: 3.14.0
       gatsby-worker: 1.14.0
-      glob: 7.2.2
+      glob: 7.2.3
       globby: 11.1.0
       got: 11.8.3
       graphql: 15.8.0
@@ -7209,8 +7209,8 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: false
 
-  /glob/7.2.2:
-    resolution: {integrity: sha512-NzDgHDiJwKYByLrL5lONmQFpK/2G78SMMfo+E9CuGlX4IkvfKDsiQSNPwAYxEy+e6p7ZQ3uslSLlwlJcqezBmQ==}
+  /glob/7.2.3:
+    resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -7291,7 +7291,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       array-union: 1.0.2
-      glob: 7.2.2
+      glob: 7.2.3
       object-assign: 4.1.1
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -10384,7 +10384,7 @@ packages:
       chalk: 4.1.2
       fb-watchman: 2.0.1
       fbjs: 3.0.4
-      glob: 7.2.2
+      glob: 7.2.3
       graphql: 15.8.0
       immutable: 3.7.6
       invariant: 2.2.4
@@ -10546,14 +10546,14 @@ packages:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
     hasBin: true
     dependencies:
-      glob: 7.2.2
+      glob: 7.2.3
     dev: false
 
   /rimraf/3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.2.2
+      glob: 7.2.3
     dev: false
 
   /run-async/2.4.1:
