@@ -19,20 +19,49 @@ To avoid losing track of everything that has been happening since ES6, I've been
 
 ### Angular:
 
-I studied Angular back in 2016 when I started helping the team that maintained a VOIP conferencing client that connected to media servers and local devices through a browser extension. The company I worked for asked us to run a small "dojo" as they called it so that every member of the team could investigate a small piece of the framework and share a little of the knowledge or experience they had. The app was already written so we only maintained it, Angular 2 was still being developed so we focused on Angular 1.
+    I studied Angular back in 2016 when I started helping the team that maintained a VOIP conferencing client that connected to media servers and local devices through a browser extension. The company I worked for asked us to run a small "dojo" as they called it so that every member of the team could investigate a small piece of the framework and share a little of the knowledge or experience they had. The app was already written so we only maintained it, Angular 2 was still being developed so we focused on Angular 1.
 
-We never upgraded after that because, after talking with the customer, considering the learning curve for new developers, we chose to switch to React and write a new client using WebRTC (dropping the browser extension).
+    We never upgraded after that because, after talking with the customer, considering the learning curve for new developers, we chose to switch to React and write a new client using WebRTC (dropping the browser extension).
 
-Among the improvements and bug fixes I worked on, the one I consider the most relevant was using Microsoft's Azure Communication Services SDK to enumerate devices and handle browser permissions, displaying warnings and errors to the user. I did that by creating a permissions service, storing the user's settings in the local storage to reuse in future calls and adding a few unit tests to cover all that new logic.
+    Among the improvements and bug fixes I worked on, the one I consider the most relevant was using Microsoft's Azure Communication Services SDK to enumerate devices and handle browser permissions, displaying warnings and errors to the user. I did that by creating a permissions service, storing the user's settings in the local storage to reuse in future calls and adding a few unit tests to cover all that new logic.
 
 ### React, React Native and Ionic:
 
-My first contact
+    My first contact with React was back in 2017 when I read about how it was created to replace PHP include files, but with a lifecycle. I decided to test it and wrote a small CRUD using Local Storage.
+
+    A few months later our customer requested a new application to list and manage recordings of videoconferences.
+
+    I didn't get to create the project myself, but I programmed the login form, the navigation bar and the main collapsable panel for the recordings. I also had the chance to work with Material UI and to create high order components extending it and later, to work with Redux dispatching state changes to the store and updating other components.
+    After that, I volunteered to teach a React 101 training with a collegue. Functional components and react hooks weren't a thing yet.
+
+    On the following year, after lots of backend and infrastructure changes, the customer asked us to test third parties WebRTC SDKs with cross platfom solutions so they could drop the current mobile app and maintain a single application. That was when I first used react hooks and functional components.
+
+    I tested the React Native and Ionic solutions using Amazon Chime SDK, packaging the solutions with Android Studio, the emulator and my own phone. Though React Native isn't compatible with some of the dependencies of the SDK and would require more work, the Ionic solution worked almost flawlessly, except for the Screen Sharing feature which would require some platform specific code.
+
+    The client was satisfied and decided to go with Ionic, but the actual development was postponed and hasn't started yet.
+
+    While working on those projects, a friend of mine asked for my help in writing the UI for an Web Service mocking solution that he has been working on for years now.
+
+    It's a simple application with only two forms, each one with lots of inputs but, because it's meant for developers, every form has a JSON tab they can switch to, where any changes made to the requests that mock their own Web Services are synchronized back to the inputs.
+
+    I used Typescript, I18n, React Bootstrap and Styled Components to write it, creating the component hierarchy using barrel exports. It was also the first time I used the useContext and useRef hooks to be able to clean and repopulate the JSON editor when there was a change.
 
 ### Vue:
+
+    Back in 2020, when the pandemic started, I was working with a friend on a food delivery app written in Python with Django.
+
+    He asked me to help him build a new module for the administrator panel that customers use, where they would manage orders made by their own customers sitting at tables in the actual restaurant.
+
+    It was my first and only contact with Vue, but coming from a React background, it was quite a smooth transition. I wrote high order components, Vue's event emitting and context APIs and used a polling solution to keep the UI syncronized with new orders coming from the backend.
+
+    The user could manage tables, edit orders and, the trickiest feature I wrote: pairing product options, like ordering 4 halves of 4 different pizzas. Those "halves" needed to be paired based on a user preference like "Consider the most expensive flavour", with their actual and calculated prices displayed to the user.
+
+    I also used an internationalizaiton library to display all labels so my friend could, eventually, also sell to restaurants in Canada where he lives now.
 
 ## Backend
 
 ### Java:
 
 ### Python:
+
+### NodeJS
