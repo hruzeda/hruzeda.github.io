@@ -15,13 +15,13 @@ Using MySQL, I learned how the basic CRUD requests worked and how to consume Web
 
 I then had a short experience with Ruby on Rails to maintain the [website](http://www2.lencoispaulista.sp.gov.br/v2/) of the city I lived in, a project that I later had to convert to PHP when I decided to leave the advertising agency I worked on to progress my career and work with ERPs written in Cobol and being converted to Java EE.
 
-I wrote a PHP script with a cron task scheduled that distributed internal e-mails to the all employees, rewrote most of the e-mail templates and the company website 3 times (considering invitations I received a few years after leaving the company).
+While participating in an internal training to learn Cobol, and working with the Java conversion team, I wrote a PHP script that, when executed in a cron task, distributed internal e-mails to the all employees. I also rewrote most of the e-mail templates and the [company website](http://supportinformatica.com.br) 3 times (considering invitations I received a few years after leaving the company).
 
-I've also worked for 2 years with Flash games programmed with Actionscript 3, Apache Flex and Adobe AIR, where I started practicing design patterns and tried to create a framework the whole team could use to build cross platform 2D tiled games using the Starling Framework.
+I then moved on to another company, where I worked for 2 years with educational Flash games written in Actionscript 3, Apache Flex and Adobe AIR. I was practicing design patterns and tried to create a framework the whole team could use to build cross platform 2D tiled games using the [Starling Framework](https://gamua.com/starling/).
 
 I created a Map Editor with its own a file extension mapped on the OS (worked on Win/Mac/Unix via Adobe AIR, designed an entity pattern for NPCs and a path finding algorithm using the A\* algorythm. Afterwards I ported the same code to [CreateJS using Javascript](https://github.com/hruzeda/museudavida) and to [Cocos2d using C++](https://gitlab.com/ruzeda/isometric-uzeda).
 
-There was also an alternative solution using the Starling Framework for fake isometric games that distributed nodes over any image identifying empty spaces by analysing the bitmap data, and that used the same path finding algorythm. Creating games visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures.
+There was also an alternative solution I wrote, also using the Starling Framework, for fake isometric games. It distributed nodes over any image, identifying empty spaces by analysing the bitmap data. Coupled with the same path finding algorythm, it created game visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures and placing the player between then.
 
 ## Front End
 
