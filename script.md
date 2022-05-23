@@ -19,9 +19,9 @@ While participating in an internal training to learn Cobol, and working with the
 
 I then moved on to another company, where I worked for 2 years with educational Flash games written in Actionscript 3, Apache Flex and Adobe AIR. I was practicing design patterns and tried to create a framework the whole team could use to build cross platform 2D tiled games using the [Starling Framework](https://gamua.com/starling/).
 
-I created a Map Editor with its own a file extension via Adobe AIR (worked on any desktop platform), designed an entity pattern for NPCs and a path finding algorithm using the A\* algorythm. Afterwards I ported the same code to [CreateJS using Javascript](https://github.com/hruzeda/museudavida) and to [Cocos2d using C++](https://gitlab.com/ruzeda/isometric-uzeda).
+I created a Map Editor with its own a file extension via Adobe AIR (worked on any desktop platform), designed an entity pattern for NPCs and a path finding algorithm using the A\* algorithm. Afterwards I ported the same code to [CreateJS using Javascript](https://github.com/hruzeda/museudavida) and to [Cocos2d using C++](https://gitlab.com/ruzeda/isometric-uzeda).
 
-There was also an alternative solution I wrote, also using the Starling Framework, for fake isometric games. It distributed nodes over any image, identifying empty spaces by analysing the bitmap data. Coupled with the same path finding algorythm, it created game visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures and placing the player between then.
+There was also an alternative solution I wrote, also using the Starling Framework, for fake isometric games. It distributed nodes over any image, identifying empty spaces by analyzing the bitmap data. Coupled with the same path finding algorithm, it created game visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures and placing the player between them.
 
 ## Front End
 
