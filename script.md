@@ -2,9 +2,9 @@
 
 I'm 32 years old now, single parent, living in the countryside of the state of São Paulo. It's not the ideal area for developer jobs so I tried moving closer to the capital back in 2015 but being away from my daughter I moved back to her hometown when the pandemic started and I've been working remotely since then.
 
-For the last five years I've been working outsourced for British Telecom as an extension of their development team. We work mostly with legacy apps, slowly updating some and trying to replace others.
+For the last five years I've been working outsourced for a conferencing customer as an extension of their development team. We work mostly with legacy apps, slowly updating some and trying to replace others.
 
-My scrum team, specifically, works with internal applications that BT uses to schedule conferences, create users, manage access to those conferences and specific features as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
+My scrum team, specifically, works with internal applications that the customer uses to schedule conferences, create users, manage access to those conferences and specific features as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
 
 Front end apps are pretty outdated but, since they're not customer facing, updating them isn't always prioritized. Everytime we get a chance though, we try to create POCs consuming something from their APIs and experimenting with new techs.
 
