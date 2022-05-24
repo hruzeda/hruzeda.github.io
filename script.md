@@ -60,7 +60,7 @@ I used Typescript, I18n, React Bootstrap and Styled Components to write it, crea
 
 Back in 2020, when the pandemic started, I was working with a friend on a [food delivery app written in Python with Django](https://cardapex.com.br).
 
-He asked me to help him build a new module for the administrator panel that customers use, where they would manage orders made by their own customers sitting at tables in the actual restaurant.
+He asked me to help him maintain the app and build new features. One of these was a module for the administrator panel that customers use, where they would manage orders made by their own customers sitting at tables in the actual restaurant.
 
 It was my first contact with Vue but, coming from a React background, it was quite a smooth transition. I wrote high order components, Vue's event emitting and context APIs and used a polling solution to keep the UI syncronized with new orders coming from the back end.
 
@@ -70,14 +70,24 @@ I also used an internationalizaiton library to display all labels so my friend c
 
 ## Back End
 
-ALthough I started more as a front end dev, I
+Although I started more as a front end dev, I've always had some back end work to do as well. In recent years, more work than I had on the front end. I've written basic PHP content management systems and REST web services, maintained a Ruby on Rails CMS, then moved on to work on a Java EE ERP (Java 1.6).
+
+After two years working with game development, I moved on to work on Django (Python) systems, and then finally back to Java web applications writen with Java 8, Spring and Struts.
 
 ### Java:
 
-I learned Java and a little bit about Spring Framework and Hibernate back in 2012 when I worked on Support Informática converting their ERP solution from Cobol/Delphi.
+I learned Java and a bit about Spring Framework and Hibernate back in 2012 when I worked on Support Informática converting their ERP solution from Cobol/Delphi. I wrote JSP pages and their back ends, mirroring screens from the legacy app.
+
+Fast forward a few years to when I joined Daitan (now Encora) and started working on Java back end systems for audio conferencing systems. I worked on Struts and Spring back end for company and customer facing applications, REST web services written with Apache CXF and XML/JSON marshalling, EJB core APIs, PL/SQL procedures and data migrations.
+
+For the last 3 years, I've also been training interns and interviewing experienced Java EE developers to join the company, as well as tackling production support issues and CVE upgrades on various systems.
 
 ### Python:
 
+Back in 2014, I worked for three months on a Django remote learning platform where I recognized a lot of similarities from my short experience with Ruby on Rails in 2010. I worked on data migrations, asynchronous tasks written for Celery and integrations with a customer relation system.
+
+In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using paid Google Maps services) as well as the delivery settings/limitations pages on the admin panel. I also wrote some of the shopping cart REST API, as well as other features in the front end. Everything with unit test coverage and data migration scripts.
+
 ### NodeJS
 
-moving into javascript back end, I've also studied Node, Express and a few middlewares and even Apollo GraphQL.
+Moving into javascript back end, I've studied and written small apps using [Express with Mongoose](https://github.com/hruzeda/simplecms), a few middlewares and Apollo GraphQL.
