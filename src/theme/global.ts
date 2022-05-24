@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100vh;
     overflow: hidden;
-    background: #7e8a78;
+    background: #0B3861;
   }
   body > div, body > div > div, .container, .carousel, .slide, .carousel-inner, .carousel-item {
     height: 100%;
