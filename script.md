@@ -1,12 +1,12 @@
 # Who Am I:
 
-I'm 32 now, single parent, living in the countryside of the state of São Paulo. I started working with HTML and CSS back in 2010 on an advertising agency, but progressed through lots of other techs since then.
+I'm 32 now, single parent, living in the countryside of the state of São Paulo. I started working with HTML and CSS back in 2010 and worked with lots of languages and frameworks since then.
 
-For the last five years I've been working outsourced for an audio conferencing company as an extension of their development team. We work mostly with Java EE apps, slowly updating some and trying to replace others.
+In the last five years I've been working outsourced for an audio conferencing company as an extension of their development team. We work with Java EE apps, keeping them up to date with new features and standards and replacing legacy apps.
 
-My scrum team, specifically, works with internal applications that the customer uses to schedule conferences, create users, manage access and specific features to those conferences as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
+My scrum team works mostly with internal applications that the customer uses to schedule conferences, create users, manage access and specific features to those conferences as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
 
-Front end apps are pretty outdated but, since they're not customer facing, updating them isn't always prioritized. Everytime we get a chance though, we try to create POCs consuming something from their APIs to try out new techs.
+Although most front end apps are not customer facing, every time we get a chance we create small POCs consuming something from their APIs to try out new techs.
 
 # Experiences and projects:
 
@@ -24,9 +24,13 @@ I created a Map Editor with its own a file extension via Adobe AIR (worked on an
 
 There was also an alternative solution I wrote, also using the Starling Framework, for fake isometric games. It distributed nodes over any image, identifying empty spaces by analyzing the bitmap data. Coupled with the same path finding algorithm, it created game visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures and placing the player between them.
 
+A last short experience worth mentioning was the maintenance and development of a simulator/replacement for a DLL based GUI extension for the old Webex communication client. It handled audio streams coming from the user's devices to get them through third party media servers and enhance quality.
+
 ## Front End
 
-In the last few years although I'm oficially working mainly on legacy apps and most of my work is back end with very little tweaking of HTML/CSS, Javascript and jQuery here and there, I've been studying and working on personal projects with Angular, React, Redux, Vue, Typescript to avoid losing track of everything that has been happening since ES6.
+In the last few years although I'm mainly working on back end code with very little tweaking of HTML/CSS, Javascript and jQuery here and there, I've been studying and working on personal projects with Angular, React, Redux, Vue, Typescript to avoid losing track of everything that has been happening since ES6.
+
+Moving into javascript back end, I've studied and written small apps using [Express with Mongoose](https://github.com/hruzeda/simplecms), a few middlewares and Apollo GraphQL.
 
 ### Angular:
 
@@ -79,16 +83,21 @@ After two years working with game development, I moved on to work on Django (Pyt
 
 I learned Java and a bit about Spring Framework and Hibernate back in 2012 when I worked on Support Informática converting their ERP solution from Cobol/Delphi. I wrote JSP pages and their back ends, mirroring screens from the legacy app.
 
-Fast forward a few years to when I joined Daitan (now Encora) and started working on Java back end systems for audio conferencing systems. I worked on Struts and Spring back end for company and customer facing applications, REST web services written with Apache CXF and XML/JSON marshalling, EJB core APIs, PL/SQL procedures and data migrations.
+A few years later I joined Daitan (now Encora) and started working on Java back end systems for audio conferencing systems. I worked on:
 
-For the last 3 years, I've also been training interns and interviewing experienced Java EE developers to join the company, as well as tackling production support issues and CVE upgrades on various systems.
+- Struts and Spring projects for company and customer facing applications
+  - Route mapping, view controllers, validation patters, entity builders, JSP tags and tiles
+- REST web services written with Apache CXF, Spring Boot and RestEasy
+  - Route mapping, Swagger documentation, exception handling, filters/interceptors and JWT authentication
+- EJB based core APIs, JPA entity mapping, PL/SQL procedures and data migrations
+- Scheduling, bulk processing and provisioning systems using JMS and Quartz
+- Tests using Jmeter, Postman, Selenium, TestNG, JUnit, mockito, powermock and JMockit
+- Docker and docker-compose scripts for all the applications described above
+
+For the last 3 years, I've also been training interns, interviewing experienced Java EE developers to join the company, as well as giving support to production issues and CVE upgrades on various systems.
 
 ### Python:
 
 Back in 2014, I worked for three months on a Django remote learning platform where I recognized a lot of similarities from my short experience with Ruby on Rails in 2010. I worked on data migrations, asynchronous tasks written for Celery and integrations with a customer relation system.
 
 In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using paid Google Maps services) as well as the delivery settings/limitations pages on the admin panel. I also wrote some of the shopping cart REST API, as well as other features in the front end. Everything with unit test coverage and data migration scripts.
-
-### NodeJS
-
-Moving into javascript back end, I've studied and written small apps using [Express with Mongoose](https://github.com/hruzeda/simplecms), a few middlewares and Apollo GraphQL.

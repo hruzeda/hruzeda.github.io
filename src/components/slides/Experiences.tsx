@@ -77,6 +77,13 @@ export const Experiences = () => {
         </a>{' '}
         by overlaying flat textures and placing the player between them.
       </p>
+      <p>
+        A last short experience worth mentioning was the maintenance and
+        development of a simulator/replacement for a DLL based GUI extension for
+        the old Webex communication client. It handled audio streams coming from
+        the user's devices to get them through third party media servers and
+        enhance quality.
+      </p>
     </div>
   )
 }
