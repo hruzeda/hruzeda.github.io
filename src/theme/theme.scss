@@ -7,11 +7,11 @@ $red: #dc3545;
 $gray-100: #f8f9fa;
 $gray-900: #212529;
 
-$primary: #AD231C;
-$secondary: #0A60AD;
-$tertiary: #A4AD2D;
-$quaternary: #0B3861;
-$quinary: #610A06;
+$primary: #F23030;
+$secondary: #267365;
+$tertiary: #F2CB05;
+$quaternary: #731717;
+$quinary: #11332D;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
@@ -48,11 +48,10 @@ $table-variants: (
   'dark': $dark
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-$font-family-sans-serif: 'Open Sans';
-$font-family-monospace: 'JetBrains Mono';
-$font-size-base: 0.9rem; // Assumes the browser default, typically 16px
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share:wght@400;700&display=swap');
+$font-family-sans-serif: 'Share Tech Mono';
+$font-family-monospace: 'Share Tech Mono';
+$font-size-base: 1rem; // Assumes the browser default, typically 16px
 
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';

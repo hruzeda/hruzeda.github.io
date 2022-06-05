@@ -1,16 +1,17 @@
 # Who Am I:
 
-I'm 32 years old now, single parent, living in the countryside of the state of São Paulo. It's not the ideal area for developer jobs so I tried moving closer to the capital back in 2015 but being away from my daughter I moved back to her hometown when the pandemic started and I've been working remotely since then.
+I'm 32 now, single parent, living in the countryside of the state of São Paulo. I started working with HTML and CSS back in 2010 on an advertising agency, but progressed through lots of other techs since then.
 
-For the last five years I've been working outsourced for a conferencing customer as an extension of their development team. We work mostly with legacy apps, slowly updating some and trying to replace others.
+For the last five years I've been working outsourced for an audio conferencing company as an extension of their development team. We work mostly with Java EE apps, slowly updating some and trying to replace others.
 
-My scrum team, specifically, works with internal applications that the customer uses to schedule conferences, create users, manage access to those conferences and specific features as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
+My scrum team, specifically, works with internal applications that the customer uses to schedule conferences, create users, manage access and specific features to those conferences as well as provisioning and synchronizing with other databases and third party services like Zoom and Cisco.
 
-Front end apps are pretty outdated but, since they're not customer facing, updating them isn't always prioritized. Everytime we get a chance though, we try to create POCs consuming something from their APIs and experimenting with new techs.
+Front end apps are pretty outdated but, since they're not customer facing, updating them isn't always prioritized. Everytime we get a chance though, we try to create POCs consuming something from their APIs to try out new techs.
 
 # Experiences and projects:
 
 I started programming in an advertising agency back in 2010 customizing [PHP](https://github.com/hruzeda/phpcms) templates to different Photoshop layouts and front end has been my passion ever since.
+
 Using MySQL, I learned how the basic CRUD requests worked and how to consume Web Services via REST and SOAP to integrate with payment systems like PayPal.
 
 I then had a short experience with Ruby on Rails to maintain the [website](http://www2.lencoispaulista.sp.gov.br/v2/) of the city I lived in, a project that I later had to convert to PHP when I decided to leave the advertising agency I worked on to progress my career and work with ERPs written in Cobol and being converted to Java EE.

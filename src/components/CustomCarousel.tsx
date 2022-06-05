@@ -1,17 +1,34 @@
 import * as React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 
-export const CenteredText = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3em;
-  height: 100%;
-  h1 {
-    text-align: center;
-    font-size: 3rem;
+const Slide = styled.div`
+  transition: height 2s;
+  height: 0;
+  max-height: 75vh;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span,
+  li {
+    text-align: justify;
   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+const TallDiv = styled(Col)`
+  height: 100%;
+  padding: 25px 50px 25px 0;
 `
 
 type CustomCarouselProps = {
@@ -28,20 +45,16 @@ export default function CustomCarousel({ children }: CustomCarouselProps) {
   let body: Array<JSX.Element> = []
   if (children) {
     const transient = Array.isArray(children) ? children : [children]
-    body = transient.map((child, index) => (
-      <Carousel.Item key={index}>{child}</Carousel.Item>
+    body = transient.map((child, i) => (
+      <Slide key={i} className={index == i ? 'h-auto' : undefined}>
+        {child}
+      </Slide>
     ))
   }
 
   return (
-    <Carousel
-      activeIndex={index}
-      onSelect={handleSelect}
-      fade
-      variant='dark'
-      controls={false}
-    >
+    <TallDiv xs='12' lg='8' className='align-items-center'>
       {body}
-    </Carousel>
+    </TallDiv>
   )
 }
