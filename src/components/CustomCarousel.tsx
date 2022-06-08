@@ -5,12 +5,15 @@ import styled from 'styled-components'
 const Slide = styled.div`
   transition: height 2s;
   height: 0;
-  max-height: 75vh;
-  position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    max-height: 75vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
   h1,
   h2,
@@ -27,8 +30,12 @@ const Slide = styled.div`
 `
 
 const TallDiv = styled(Col)`
-  height: 100%;
-  padding: 25px 50px 25px 0;
+  padding: 25px;
+
+  @media (min-width: 992px) {
+    height: 100%;
+    padding: 25px 25px 25px 12.5px;
+  }
 `
 
 type CustomCarouselProps = {

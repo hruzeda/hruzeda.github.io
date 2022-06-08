@@ -5,10 +5,8 @@ export const AboutMe = () => {
     <div>
       <h2>About Me</h2>
       <p>
-        I'm {new Date().getFullYear() - 1990} now, single parent, living in the
-        countryside of the state of São Paulo. I started working with HTML and
-        CSS back in 2010 and worked with lots of languages and frameworks since
-        then.
+        I started working with simple website layouts in HTML and CSS back in
+        2010 and have worked with lots of languages and frameworks since then.
       </p>
       <p>
         In the last five years I've been working outsourced for an audio

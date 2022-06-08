@@ -18,12 +18,17 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
   }
   body {
-    height: 100vh;
-    overflow: hidden;
     background: ${theme.primaryDark};
+
+    @media(min-width: 992px) {
+      height: 100vh;
+      overflow: hidden;
+    }
   }
   body > div, body > div > div {
-    height: 100%;
+    @media(min-width: 992px) {
+      height: 100%;
+    }
   }
   h1, h2, h3, h4, h5 {
     text-transform: uppercase;
