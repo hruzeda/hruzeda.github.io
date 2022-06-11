@@ -1,67 +1,70 @@
 import * as React from 'react'
-import { Carousel, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import styled from 'styled-components'
 
-const Slide = styled.div`
-  transition: height 2s;
-  height: 0;
-  overflow: hidden;
+import * as Slides from './slides'
+import { theme } from '../theme/global'
+import CustomTransition from './CustomTransition'
+
+export type SlideProps = {
+  active: string
+}
+
+export const Slide = styled(CustomTransition)``
+
+const TallDiv = styled(Col)`
+  padding: 25px 25px 25px 30px;
 
   @media (min-width: 992px) {
+    height: auto;
     max-height: 75vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: thin;
+  }
+
+  &::-webkit-scrollbar {
+    right: -10px;
+    width: 5px;
+    background-color: ${theme.containerBgDark};
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 8px;
+    background-color: ${theme.containerBgLight};
   }
 
   h1,
   h2,
   h3,
-  h4,
+  h4 {
+    text-align: left;
+  }
+
   p,
   span,
   li {
     text-align: justify;
   }
-  &::-webkit-scrollbar {
-    display: none;
-  }
-`
-
-const TallDiv = styled(Col)`
-  padding: 25px;
-
-  @media (min-width: 992px) {
-    height: 100%;
-    padding: 25px 25px 25px 12.5px;
-  }
 `
 
 type CustomCarouselProps = {
-  children: React.ReactNode | React.ReactNode[]
+  activeSlide: string
 }
 
-export default function CustomCarousel({ children }: CustomCarouselProps) {
-  const [index, setIndex] = React.useState(0)
-
-  const handleSelect = (selectedIndex: number) => {
-    setIndex(selectedIndex)
-  }
-
-  let body: Array<JSX.Element> = []
-  if (children) {
-    const transient = Array.isArray(children) ? children : [children]
-    body = transient.map((child, i) => (
-      <Slide key={i} className={index == i ? 'h-auto' : undefined}>
-        {child}
-      </Slide>
-    ))
-  }
-
+export const CustomCarousel = ({ activeSlide }: CustomCarouselProps) => {
   return (
     <TallDiv xs='12' lg='8' className='align-items-center'>
-      {body}
+      <Slides.AboutMe active={activeSlide} />
+      <Slides.Experiences active={activeSlide} />
+      <Slides.FrontEnd active={activeSlide} />
+      <Slides.Angular active={activeSlide} />
+      <Slides.ReactSlide active={activeSlide} />
+      <Slides.Vue active={activeSlide} />
+      <Slides.BackEnd active={activeSlide} />
+      <Slides.Java active={activeSlide} />
+      <Slides.Python active={activeSlide} />
     </TallDiv>
   )
 }
