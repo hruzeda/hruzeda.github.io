@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+
 import './theme.scss'
 
 export const theme = {
@@ -13,7 +14,7 @@ export const theme = {
   containerBgLight: '#CCBCB6'
 }
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 1.2rem;
   }
@@ -42,5 +43,3 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none !important;
   }
 `
-
-export default GlobalStyle

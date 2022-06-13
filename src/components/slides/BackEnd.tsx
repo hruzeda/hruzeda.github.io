@@ -1,10 +1,14 @@
 import * as React from 'react'
 
-import { Slide, SlideProps } from '../CustomCarousel'
+import { Slide } from '../CustomCarousel'
+import { SlideContext } from '../../pages/index'
+import { Button, ButtonGroup } from 'react-bootstrap'
 
-export const BackEnd = (props: SlideProps) => {
+export const BackEnd = () => {
+  const { slide, setSlide } = React.useContext(SlideContext)
+
   return (
-    <Slide inProp={props.active === 'BackEnd'}>
+    <Slide inProp={slide === 'BackEnd'}>
       <div>
         <h2>Back End</h2>
 
@@ -20,6 +24,17 @@ export const BackEnd = (props: SlideProps) => {
           Django (Python) systems, and then finally back to Java web
           applications writen with Java 8, Spring and Struts.
         </p>
+      </div>
+
+      <div className='text-center'>
+        <ButtonGroup className='mt-4'>
+          <Button variant='quaternary' onClick={() => setSlide('Java')}>
+            Java
+          </Button>
+          <Button variant='quaternary' onClick={() => setSlide('Python')}>
+            Python
+          </Button>
+        </ButtonGroup>
       </div>
     </Slide>
   )

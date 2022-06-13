@@ -1,10 +1,13 @@
 import * as React from 'react'
 
-import { Slide, SlideProps } from '../CustomCarousel'
+import { Slide } from '../CustomCarousel'
+import { SlideContext } from '../../pages/index'
 
-export const Java = (props: SlideProps) => {
+export const Java = () => {
+  const { slide, setSlide } = React.useContext(SlideContext)
+
   return (
-    <Slide inProp={props.active === 'Java'}>
+    <Slide inProp={slide === 'Java'}>
       <div>
         <h2>Java</h2>
 

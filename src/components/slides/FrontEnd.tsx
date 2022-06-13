@@ -1,10 +1,14 @@
 import * as React from 'react'
 
-import { Slide, SlideProps } from '../CustomCarousel'
+import { Slide } from '../CustomCarousel'
+import { SlideContext } from '../../pages/index'
+import { Button, ButtonGroup } from 'react-bootstrap'
 
-export const FrontEnd = (props: SlideProps) => {
+export const FrontEnd = () => {
+  const { slide, setSlide } = React.useContext(SlideContext)
+
   return (
-    <Slide inProp={props.active === 'FrontEnd'}>
+    <Slide inProp={slide === 'FrontEnd'}>
       <div>
         <h2>Front End</h2>
 
@@ -23,6 +27,20 @@ export const FrontEnd = (props: SlideProps) => {
           </a>
           , a few middlewares and Apollo GraphQL.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='quaternary' onClick={() => setSlide('Angular')}>
+              Angular
+            </Button>
+            <Button variant='quaternary' onClick={() => setSlide('React')}>
+              React
+            </Button>
+            <Button variant='quaternary' onClick={() => setSlide('Vue')}>
+              Vue
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

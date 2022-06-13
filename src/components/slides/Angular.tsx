@@ -1,10 +1,13 @@
 import * as React from 'react'
 
-import { Slide, SlideProps } from '../CustomCarousel'
+import { Slide } from '../CustomCarousel'
+import { SlideContext } from '../../pages/index'
 
-export const Angular = (props: SlideProps) => {
+export const Angular = () => {
+  const { slide, setSlide } = React.useContext(SlideContext)
+
   return (
-    <Slide inProp={props.active === 'Angular'}>
+    <Slide inProp={slide === 'Angular'}>
       <div>
         <h2>Angular</h2>
 

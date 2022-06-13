@@ -38,7 +38,10 @@ type CustomTransitionProps = {
   children: React.ReactNode | React.ReactNode[]
 }
 
-const CustomTransition = ({ inProp, children }: CustomTransitionProps) => (
+export const CustomTransition = ({
+  inProp,
+  children
+}: CustomTransitionProps) => (
   <Transition in={inProp} timeout={duration}>
     {(state) => (
       <div
@@ -53,5 +56,3 @@ const CustomTransition = ({ inProp, children }: CustomTransitionProps) => (
     )}
   </Transition>
 )
-
-export default CustomTransition

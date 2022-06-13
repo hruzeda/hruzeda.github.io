@@ -4,11 +4,7 @@ import styled from 'styled-components'
 
 import * as Slides from './slides'
 import { theme } from '../theme/global'
-import CustomTransition from './CustomTransition'
-
-export type SlideProps = {
-  active: string
-}
+import { CustomTransition } from './CustomTransition'
 
 export const Slide = styled(CustomTransition)``
 
@@ -49,22 +45,18 @@ const TallDiv = styled(Col)`
   }
 `
 
-type CustomCarouselProps = {
-  activeSlide: string
-}
-
-export const CustomCarousel = ({ activeSlide }: CustomCarouselProps) => {
+export const CustomCarousel = () => {
   return (
     <TallDiv xs='12' lg='8' className='align-items-center'>
-      <Slides.AboutMe active={activeSlide} />
-      <Slides.Experiences active={activeSlide} />
-      <Slides.FrontEnd active={activeSlide} />
-      <Slides.Angular active={activeSlide} />
-      <Slides.ReactSlide active={activeSlide} />
-      <Slides.Vue active={activeSlide} />
-      <Slides.BackEnd active={activeSlide} />
-      <Slides.Java active={activeSlide} />
-      <Slides.Python active={activeSlide} />
+      <Slides.AboutMe />
+      <Slides.Experiences />
+      <Slides.FrontEnd />
+      <Slides.Angular />
+      <Slides.ReactSlide />
+      <Slides.Vue />
+      <Slides.BackEnd />
+      <Slides.Java />
+      <Slides.Python />
     </TallDiv>
   )
 }

@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { Container } from 'react-bootstrap'
 import { Link } from 'gatsby'
 
-import GlobalStyle, { theme } from '../theme/global'
+import { GlobalStyle, theme } from '../theme/global'
 
 // styles
 const pageStyles = {

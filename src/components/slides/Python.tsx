@@ -1,10 +1,13 @@
 import * as React from 'react'
 
-import { Slide, SlideProps } from '../CustomCarousel'
+import { Slide } from '../CustomCarousel'
+import { SlideContext } from '../../pages/index'
 
-export const Python = (props: SlideProps) => {
+export const Python = () => {
+  const { slide, setSlide } = React.useContext(SlideContext)
+
   return (
-    <Slide inProp={props.active === 'Python'}>
+    <Slide inProp={slide === 'Python'}>
       <div>
         <h2>Python</h2>
 
