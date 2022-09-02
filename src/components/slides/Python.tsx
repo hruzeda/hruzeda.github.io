@@ -26,10 +26,10 @@ export const Python = () => {
           </a>
           . I worked with him for approximately 2 years, writing the work shift
           planning pages, the delivery route and time estimate calculation
-          (using paid Google Maps services) as well as the delivery
-          settings/limitations pages on the admin panel. I also wrote some of
-          the shopping cart REST API, as well as other features in the front
-          end. Everything with unit test coverage and data migration scripts.
+          (using Google Maps API) as well as the delivery settings pages. I also
+          wrote some of the shopping cart's REST API, as well as other features
+          in the front end. Everything with unit test coverage and data
+          migration scripts.
         </p>
       </div>
     </Slide>

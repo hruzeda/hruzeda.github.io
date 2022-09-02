@@ -1,6 +1,6 @@
 # Who Am I:
 
-I started working with simple website layouts in HTML and CSS back in 2010. Since then, I have worked with lots of other languages and frameworks.
+I started working with simple website layouts in HTML and CSS back in 2010. Since then, I have worked with lots of other languages like PHP, Ruby, Python, Java and frameworks like Rails, Django, Struts and Spring.
 
 In the last five years I've been working outsourced for an audio conferencing company as an extension of their development team. We work with Java EE apps, keeping them up to date with new features and standards and replacing legacy apps.
 
@@ -100,4 +100,4 @@ For the last 3 years, I've also been training interns, interviewing experienced 
 
 Back in 2014, I worked for three months on a Django remote learning platform where I recognized a lot of similarities from my short experience with Ruby on Rails in 2010. I worked on data migrations, asynchronous tasks written for Celery and integrations with a customer relation system.
 
-In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using paid Google Maps services) as well as the delivery settings/limitations pages on the admin panel. I also wrote some of the shopping cart REST API, as well as other features in the front end. Everything with unit test coverage and data migration scripts.
+In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using Google Maps API) as well as the delivery settings pages. I also wrote some of the shopping cart's REST API, as well as other features in the front end. Everything with unit test coverage and data migration scripts.

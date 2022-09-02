@@ -5,8 +5,8 @@ import './theme.scss'
 export const theme = {
   primary: '#F23030',
   primaryDark: '#731717',
-  secondary: '#267365',
-  secondaryDark: '#11332D',
+  secondary: '#386B46',
+  secondaryDark: '#2A5235',
   tertiary: '#F2CB05',
   tertiaryDark: '#736002',
   containerBg: '#403B39',
@@ -17,9 +17,10 @@ export const theme = {
 export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 1.2rem;
+    letter-spacing: -1px;
   }
   body {
-    background: ${theme.primaryDark};
+    background: #386B46;
 
     @media(min-width: 992px) {
       height: 100vh;
@@ -34,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   p:last-of-type {
     margin-bottom: 0;

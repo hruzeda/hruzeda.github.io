@@ -7,9 +7,9 @@ $red: #dc3545;
 $gray-100: #f8f9fa;
 $gray-900: #212529;
 
-$primary: #F23030;
-$secondary: #267365;
-$tertiary: #F2CB05;
+$primary: #F2CB05;
+$secondary: #386B46;
+$tertiary: #F23030;
 $quaternary: #731717;
 $quinary: #11332D;
 $success: $green;
@@ -56,6 +56,7 @@ $font-size-base: 1rem; // Assumes the browser default, typically 16px
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/utilities';
+
 @import '../../node_modules/bootstrap/scss/root';
 @import '../../node_modules/bootstrap/scss/reboot';
 @import '../../node_modules/bootstrap/scss/type';
@@ -87,6 +88,7 @@ $font-size-base: 1rem; // Assumes the browser default, typically 16px
 @import '../../node_modules/bootstrap/scss/spinners';
 @import '../../node_modules/bootstrap/scss/offcanvas';
 @import '../../node_modules/bootstrap/scss/placeholders';
+
 @import '../../node_modules/bootstrap/scss/helpers';
 @import '../../node_modules/bootstrap/scss/utilities/api';
 

@@ -9,17 +9,17 @@ export const Navigation = () => {
   return (
     <div className='text-center mt-2'>
       <ButtonGroup vertical className='mt-4'>
-        <Button variant='quaternary' onClick={() => setSlide('AboutMe')}>
+        <Button variant='primary' onClick={() => setSlide('AboutMe')}>
           About Me
         </Button>
-        <Button variant='quaternary' onClick={() => setSlide('Experiences')}>
+        <Button variant='primary' onClick={() => setSlide('Experiences')}>
           Experiences
         </Button>
         <SplitButton
           as={ButtonGroup}
           title='Front End'
           drop='end'
-          variant='quaternary'
+          variant='primary'
           onClick={() => setSlide('FrontEnd')}
         >
           <Dropdown.Item
@@ -48,7 +48,7 @@ export const Navigation = () => {
           as={ButtonGroup}
           title='Back End'
           drop='end'
-          variant='quaternary'
+          variant='primary'
           onClick={() => setSlide('BackEnd')}
         >
           <Dropdown.Item

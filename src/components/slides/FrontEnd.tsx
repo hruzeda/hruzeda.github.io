@@ -30,13 +30,13 @@ export const FrontEnd = () => {
 
         <div className='text-center'>
           <ButtonGroup className='mt-4'>
-            <Button variant='quaternary' onClick={() => setSlide('Angular')}>
+            <Button variant='primary' onClick={() => setSlide('Angular')}>
               Angular
             </Button>
-            <Button variant='quaternary' onClick={() => setSlide('React')}>
+            <Button variant='primary' onClick={() => setSlide('React')}>
               React
             </Button>
-            <Button variant='quaternary' onClick={() => setSlide('Vue')}>
+            <Button variant='primary' onClick={() => setSlide('Vue')}>
               Vue
             </Button>
           </ButtonGroup>

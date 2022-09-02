@@ -12,8 +12,9 @@ export const AboutMe = () => {
         <h2>About Me</h2>
         <p>
           I started working with simple website layouts in HTML and CSS back in
-          2010. Since then, I have worked with lots of other languages and
-          frameworks.
+          2010. Since then, I have worked with lots of other languages like PHP,
+          Ruby, Python, Java and frameworks like Rails, Django, Struts and
+          Spring.
         </p>
         <p>
           In the last five years I've been working outsourced for an audio

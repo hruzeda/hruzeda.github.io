@@ -47,7 +47,7 @@ const TallDiv = styled(Col)`
 
 export const CustomCarousel = () => {
   return (
-    <TallDiv xs='12' lg='8' className='align-items-center'>
+    <TallDiv xs='12' lg='9' className='align-items-center'>
       <Slides.AboutMe />
       <Slides.Experiences />
       <Slides.FrontEnd />

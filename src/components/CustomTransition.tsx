@@ -22,13 +22,13 @@ const transitionStyles = {
   exiting: {
     opacity: 0,
     height: 0,
-    transition: `height 0s, opacity 0s`
+    transition: `opacity ${duration}ms, height 0s linear ${duration}ms`
   },
   exited: {
     opacity: 0,
     height: 0,
     display: 'none',
-    transition: `opacity ${duration}ms, height 0s linear ${duration}ms`
+    transition: `height 0s, opacity 0s`
   },
   unmounted: { opacity: 0, height: 0 }
 }

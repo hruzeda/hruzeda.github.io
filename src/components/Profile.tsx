@@ -7,21 +7,20 @@ import { theme } from '../theme/global'
 
 const Thumb = styled.img`
   display: block;
-  width: 50%;
+  width: 42%;
   margin: 0 auto 25px;
   border-radius: 50%;
-  border: 8px solid #eee;
+  border: 5px solid #eee;
   box-shadow: 0.5px 0.5px 4px ${theme.containerBgDark};
 
   @media (min-width: 992px) {
-    width: 70%;
+    width: 48%;
   }
 `
 
 export const Profile = () => {
   return (
     <>
-      <Thumb src={thumb} />
       <div className='text-center'>
         <h3 className='mb-1'>Software Developer</h3>
         <a

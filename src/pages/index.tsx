@@ -28,15 +28,14 @@ const LeftNav = styled(Col)`
   }
 `
 
-const d: React.Dispatch<React.SetStateAction<string>> = () => {}
+const setter: React.Dispatch<React.SetStateAction<string>> = () => {}
 export const SlideContext = React.createContext({
-  slide: 'AboutMe',
-  setSlide: d
+  slide: '',
+  setSlide: setter
 })
 
 const IndexPage = () => {
   const [slide, setSlide] = React.useState('AboutMe')
-  const value = { slide, setSlide }
 
   return (
     <Wrapper>
@@ -44,9 +43,9 @@ const IndexPage = () => {
       <ThemeProvider theme={theme}>
         <Container>
           <h1 className='mb-2'>Henrique Uzêda</h1>
-          <SlideContext.Provider value={value}>
+          <SlideContext.Provider value={{ slide, setSlide }}>
             <Inner>
-              <LeftNav xs='12' lg='4' className='align-self-center'>
+              <LeftNav xs='12' lg='3' className='align-self-center'>
                 <Profile />
                 <Navigation />
               </LeftNav>

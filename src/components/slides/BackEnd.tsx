@@ -28,10 +28,10 @@ export const BackEnd = () => {
 
       <div className='text-center'>
         <ButtonGroup className='mt-4'>
-          <Button variant='quaternary' onClick={() => setSlide('Java')}>
+          <Button variant='primary' onClick={() => setSlide('Java')}>
             Java
           </Button>
-          <Button variant='quaternary' onClick={() => setSlide('Python')}>
+          <Button variant='primary' onClick={() => setSlide('Python')}>
             Python
           </Button>
         </ButtonGroup>
