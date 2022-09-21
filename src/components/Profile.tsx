@@ -1,21 +1,14 @@
 import * as React from 'react'
+import { Linkedin, Github } from 'react-bootstrap-icons'
 import styled from 'styled-components'
-import { Linkedin, Github, CodeSlash } from 'react-bootstrap-icons'
 
-import thumb from '../images/thumb.jpg'
-import { theme } from '../theme/global'
+import gitlab_logo from '../images/gitlab-logo.png'
 
-const Thumb = styled.img`
+const GitlabLogo = styled.img`
   display: block;
-  width: 42%;
-  margin: 0 auto 25px;
-  border-radius: 50%;
-  border: 5px solid #eee;
-  box-shadow: 0.5px 0.5px 4px ${theme.containerBgDark};
-
-  @media (min-width: 992px) {
-    width: 48%;
-  }
+  width: 1.8em;
+  height: 1.8em;
+  margin: -3px -8px;
 `
 
 export const Profile = () => {
@@ -38,11 +31,11 @@ export const Profile = () => {
           <Github />
         </a>{' '}
         <a
-          href='https://github.com/hruzeda/hruzeda.github.io'
+          href='https://gitlab.com/hruzeda'
           target={'_blank'}
           className='btn btn-small btn-secondary'
         >
-          <CodeSlash />
+          <GitlabLogo src={gitlab_logo} />
         </a>
       </div>
     </>
