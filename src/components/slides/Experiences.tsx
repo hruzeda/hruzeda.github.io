@@ -86,11 +86,16 @@ export const Experiences = () => {
           by overlaying flat textures and placing the player between them.
         </p>
         <p>
+          After Flash's support got cut off, I moved on and wrote a few projects
+          with Java EE, PHP, Python with Django until I started working
+          outsourced by Encora to a Boston based conferencing customer.
+        </p>
+        <p>
           A last short experience worth mentioning was the maintenance and
-          development of a simulator/replacement for a DLL based GUI extension
-          for the old Webex communication client. It handled audio streams
-          coming from the user's devices to get them through third party media
-          servers and enhance quality.
+          development of a simulator/replacement for a DLL and UI extension we
+          maintained of the old Webex communication client. It handled audio
+          streams coming from the user's devices to get them through third party
+          media servers and enhance quality and was written on C++.NET.
         </p>
       </div>
     </Slide>

@@ -13,11 +13,17 @@ export const FrontEnd = () => {
         <h2>Front End</h2>
 
         <p>
-          In the last few years although I'm mainly working on back end code
-          with very little tweaking of HTML/CSS, Javascript and jQuery here and
-          there, I've been studying and working on personal projects with
-          Angular, React, Redux, Vue, Typescript to avoid losing track of
-          everything that has been happening since ES6.
+          In the last few years, most of my work has been to back end API's and
+          integrations (except for a one year experience with Angular), but I've
+          started studying and working on personal projects with Angular, React,
+          Redux, Vue, Typescript to avoid losing track of everything that has
+          been happening since ES6.
+        </p>
+        <p>
+          Since then, I worked on three front-end projects for my current
+          customer written in Typescript and React. Two of those I created from
+          scratch, but only one is still being maintained to this day. The other
+          one was a POC comparing React Native with Ionic.
         </p>
         <p>
           Moving into javascript back end, I've studied and written small apps

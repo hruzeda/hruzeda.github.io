@@ -24,11 +24,14 @@ I created a Map Editor with its own a file extension via Adobe AIR (worked on an
 
 There was also an alternative solution I wrote, also using the Starling Framework, for fake isometric games. It distributed nodes over any image, identifying empty spaces by analyzing the bitmap data. Coupled with the same path finding algorithm, it created game visuals like [Legend of Mana](https://store.steampowered.com/app/1175830/Legend_of_Mana/) by overlaying flat textures and placing the player between them.
 
-A last short experience worth mentioning was the maintenance and development of a simulator/replacement for a DLL based GUI extension for the old Webex communication client. It handled audio streams coming from the user's devices to get them through third party media servers and enhance quality.
+After Flash's support got cut off, I moved on and wrote a few projects with Java EE, PHP, Python with Django until I started working outsourced by Encora to a Boston based conferencing customer.
+
+A last short experience worth mentioning was the maintenance and development of a simulator/replacement for a DLL and UI extension we maintained of the old Webex communication client. It handled audio streams coming from the user's devices to get them through third party media servers and enhance quality and was written on C++.NET.
 
 ## Front End
 
-In the last few years although I'm mainly working on back end code with very little tweaking of HTML/CSS, Javascript and jQuery here and there, I've been studying and working on personal projects with Angular, React, Redux, Vue, Typescript to avoid losing track of everything that has been happening since ES6.
+In the last few years, most of my work has been to back end API's and integrations (except for a one year experience with Angular), but I've started studying and working on personal projects with Angular, React, Redux, Vue, Typescript to avoid losing track of everything that has been happening since ES6.
+Since then, I worked on three front-end projects for my current customer written in Typescript and React. Two of those I created from scratch, but only one is still being maintained to this day. The other one was a POC comparing React Native with Ionic.
 
 Moving into javascript back end, I've studied and written small apps using [Express with Mongoose](https://github.com/hruzeda/simplecms), a few middlewares and Apollo GraphQL.
 
