@@ -4,7 +4,7 @@ import { Slide } from '../CustomCarousel'
 import { SlideContext } from '../../pages/index'
 
 export const Java = () => {
-  const { slide, setSlide } = React.useContext(SlideContext)
+  const { slide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Java'}>
@@ -59,8 +59,8 @@ export const Java = () => {
           </li>
         </ul>
         <p>
-          For the last 3 years, I've also been training interns, interviewing
-          experienced Java EE developers to join the company, as well as giving
+          In the last few years there, I've also trained interns, interviewed
+          experienced Java EE developers to join the company, as well as gave
           support to production issues and CVE upgrades on various systems.
         </p>
       </div>

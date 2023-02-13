@@ -4,7 +4,7 @@ import { Slide } from '../CustomCarousel'
 import { SlideContext } from '../../pages/index'
 
 export const Python = () => {
-  const { slide, setSlide } = React.useContext(SlideContext)
+  const { slide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Python'}>
