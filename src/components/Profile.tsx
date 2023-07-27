@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Linkedin, Github } from 'react-bootstrap-icons'
+import { Github, Linkedin } from 'react-bootstrap-icons'
 import styled from 'styled-components'
 
 import gitlab_logo from '../images/gitlab-logo.png'

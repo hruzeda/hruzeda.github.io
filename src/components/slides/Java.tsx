@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
+import { Button, ButtonGroup } from 'react-bootstrap'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const Java = () => {
-  const { slide } = React.useContext(SlideContext)
+  const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Java'}>
@@ -14,12 +15,12 @@ export const Java = () => {
         <p>
           I learned Java and a bit about Spring Framework and Hibernate back in
           2012 when I worked on Support Informática converting their ERP
-          solution from Cobol/Delphi. I wrote JSP pages and their back ends,
+          solution from Cobol/Delphi. I wrote JSP pages and their backends,
           mirroring screens from the legacy app.
         </p>
         <p>
           A few years later I joined Daitan (now Encora) and started working on
-          Java back end systems for audio conferencing systems. I worked on:
+          Java backend systems for audio conferencing systems. I worked on:
         </p>
         <ul>
           <li>
@@ -63,6 +64,14 @@ export const Java = () => {
           experienced Java EE developers to join the company, as well as gave
           support to production issues and CVE upgrades on various systems.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='primary' onClick={() => setSlide('Backend')}>
+              Back
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

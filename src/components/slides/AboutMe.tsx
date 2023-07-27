@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const AboutMe = () => {
   const { slide } = React.useContext(SlideContext)

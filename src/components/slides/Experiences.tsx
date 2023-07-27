@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const Experiences = () => {
   const { slide } = React.useContext(SlideContext)
@@ -17,7 +17,7 @@ export const Experiences = () => {
           <a href='https://github.com/hruzeda/phpcms' target='_blank'>
             PHP
           </a>{' '}
-          templates to different Photoshop layouts and front end has been my
+          templates to different Photoshop layouts and frontend has been my
           passion ever since.
         </p>
         <p>

@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { Container } from 'react-bootstrap'
 import { Link } from 'gatsby'
+import { Container } from 'react-bootstrap'
+import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle, theme } from '../theme/global'
 

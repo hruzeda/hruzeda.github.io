@@ -7,7 +7,7 @@ Before that, I've worked for five years outsourced to an audio conferencing comp
 
 # Experiences and projects:
 
-I started programming in an advertising agency back in 2010 customizing [PHP](https://github.com/hruzeda/phpcms) templates to different Photoshop layouts and front end has been my passion ever since.
+I started programming in an advertising agency back in 2010 customizing [PHP](https://github.com/hruzeda/phpcms) templates to different Photoshop layouts and frontend has been my passion ever since.
 
 Using MySQL, I learned how the basic CRUD requests worked and how to consume Web Services via REST and SOAP to integrate with payment systems like PayPal.
 
@@ -25,12 +25,12 @@ After Flash's support got cut off, I moved on and wrote a few projects with Java
 
 A last short experience worth mentioning was the maintenance and development of a simulator/replacement for a DLL and UI extension we maintained of the old Webex communication client. It handled audio streams coming from the user's devices to get them through third party media servers and enhance quality and was written on C++.NET.
 
-## Front End
+## Frontend
 
-In the last few years, most of my work has been to back end API's and integrations (except for a one year experience with Angular), but I've started studying and working on personal projects with Angular, React, Redux, Vue, Typescript to avoid losing track of everything that has been happening since ES6.
-Since then, I worked on three front-end projects for my current customer written in Typescript and React. Two of those I created from scratch, but only one is still being maintained to this day. The other one was a POC comparing React Native with Ionic.
+In the last few years, most of my work has been to backend API's and integrations (except for a one year experience with Angular), but I've started studying and working on personal projects with Angular, React, Redux, Vue.js, TypeScript to avoid losing track of everything that has been happening since ES6.
+Since then, I worked on three front-end projects for my current customer written in TypeScript and React. Two of those I created from scratch, but only one is still being maintained to this day. The other one was a POC comparing React Native with Ionic.
 
-Moving into javascript back end, I've studied and written small apps using [Express with Mongoose](https://github.com/hruzeda/simplecms), a few middlewares and Apollo GraphQL.
+Moving into javascript backend, I've studied and written apps using Express with Mongoose, a few middlewares and Apollo GraphQL. My first experience being a [Simple CMS](https://github.com/hruzeda/simplecms) I created based on a PHP template I used back on 2012.
 
 ### Angular:
 
@@ -49,41 +49,41 @@ A few months later our customer requested a new application to list and manage r
 I didn't get to create the project myself, but I programmed the login form, the navigation bar and the main collapsable panel for the recordings. I also had the chance to work with Material UI and to create high order components extending it and later, to work with Redux dispatching state changes to the store and updating other components.
 After that, I volunteered to teach a React 101 training with a collegue. Functional components and react hooks weren't a thing yet.
 
-On the following year, after lots of back end and infrastructure changes, the customer asked us to test third parties WebRTC SDKs with cross platfom solutions so they could drop the current mobile app and maintain a single application. That was when I first used react hooks and functional components.
+On the following year, after various backend and infrastructure changes, the customer asked us to test third parties WebRTC SDKs with cross platfom solutions so they could drop the current mobile app and maintain a single application. That was when react hooks and functional components were starting to become the norm.
 
 I tested the React Native and Ionic solutions using Amazon Chime SDK, packaging the solutions with Android Studio, the emulator and my own phone. Though React Native isn't compatible with some of the dependencies of the SDK and would require more work, the Ionic solution worked almost flawlessly, except for the Screen Sharing feature which would require some platform specific code.
 
-The client was satisfied and decided to go with Ionic, but the actual development was postponed and hasn't started yet.
+The client was satisfied and decided to go with Ionic, though the actual development was postponed.
 
 While working on those projects, a friend of mine asked for my help in writing the UI for an [Web Service mocking solution](https://www.ffwdtec.com/copycat.html) that he has been working on for years now.
 
-It's a simple application with only two forms, each one with lots of inputs but, because it's meant for developers, every form has a JSON tab they can switch to, where any changes made to the requests that mock their own Web Services are synchronized back to the inputs.
+It's a simple application with only two views, used to create request samples that can be dynamically used for tests and demos. Each view has lots of inputs and, because it's meant for developers, a JSON tab the user can switch to, where any changes made are synchronized back to the inputs.
 
-I used Typescript, I18n, React Bootstrap and Styled Components to write it, creating the component hierarchy using barrel exports. It was also the first time I used the useContext and useRef hooks to be able to clean and repopulate the JSON editor when there was a change.
+I used TypeScript, I18n, React and Styled Components to write it, creating the component hierarchy using barrel exports. It was also the first time I didn't use React Bootstrap, and it was when I got familiar with the useContext (instead of Redux) and useRef hooks to be able to clean and repopulate the JSON editor when there was a change.
 
-### Vue:
+### Vue.js:
 
 Back in 2020, when the pandemic started, I was working with a friend on a [food delivery app written in Python with Django](https://cardapex.com.br).
 
 He asked me to help him maintain the app and build new features. One of these was a module for the administrator panel that customers use, where they would manage orders made by their own customers sitting at tables in the actual restaurant.
 
-It was my first contact with Vue but, coming from a React background, it was quite a smooth transition. I wrote high order components, Vue's event emitting and context APIs and used a polling solution to keep the UI syncronized with new orders coming from the back end.
+It was my first contact with Vue.js but, coming from a React background, it was quite a smooth transition. I wrote high order components, Vue.js' event emitting and context APIs and used a polling solution to keep the UI syncronized with new orders coming from the backend.
 
 The user could manage tables, edit orders and, the trickiest feature I wrote: pairing product options, like ordering 4 halves of 4 different pizzas. Those "halves" needed to be paired based on a setting between most and least expensive options, with their actual and calculated prices displayed to the end user.
 
 I also used an internationalizaiton library to display all labels so my friend could, eventually, also sell to restaurants in Canada where he lives now.
 
-## Back End
+## Backend
 
-Although I started more as a front end dev, I've always had some back end work to do as well. In recent years, more work than I had on the front end. I've written basic PHP content management systems and REST web services, maintained a Ruby on Rails CMS, then moved on to work on a Java EE ERP (Java 1.6).
+Although I started more as a frontend dev, I've always had some backend work to do as well. In recent years, more work than I had on the frontend. I've written basic PHP content management systems and REST web services, maintained a Ruby on Rails CMS, then moved on to work on a Java EE ERP (Java 1.6).
 
 After two years working with game development, I moved on to work on Django (Python) systems, and then finally back to Java web applications writen with Java 8, Spring and Struts.
 
 ### Java:
 
-I learned Java and a bit about Spring Framework and Hibernate back in 2012 when I worked on Support Informática converting their ERP solution from Cobol/Delphi. I wrote JSP pages and their back ends, mirroring screens from the legacy app.
+I learned Java and a bit about Spring Framework and Hibernate back in 2012 when I worked on Support Informática converting their ERP solution from Cobol/Delphi. I wrote JSP pages and their backends, mirroring screens from the legacy app.
 
-A few years later I joined Daitan (now Encora) and started working on Java back end systems for audio conferencing systems. I worked on:
+A few years later I joined Daitan (now Encora) and started working on Java backend systems for audio conferencing systems. I worked on:
 
 - Struts and Spring projects for company and customer facing applications
   - Route mapping, view controllers, validation patters, entity builders, JSP tags and tiles
@@ -100,4 +100,4 @@ In the last few years there, I've also trained interns, interviewed experienced 
 
 Back in 2014, I worked for three months on a Django remote learning platform where I recognized a lot of similarities from my short experience with Ruby on Rails in 2010. I worked on data migrations, asynchronous tasks written for Celery and integrations with a customer relation system.
 
-In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using Google Maps API) as well as the delivery settings pages. I also wrote some of the shopping cart's REST API, as well as other features in the front end. Everything with unit test coverage and data migration scripts.
+In 2020, a friend from that short experience invited me to help maintain a [food delivery app written in Python with Django](https://cardapex.com.br). I worked with him for approximately 2 years, writing the work shift planning pages, the delivery route and time estimate calculation (using Google Maps API) as well as the delivery settings pages. I also wrote some of the shopping cart's REST API, as well as other features in the frontend. Everything with unit test coverage and data migration scripts.

@@ -1,21 +1,21 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
-import { SlideContext } from '../../pages/index'
 import { Button, ButtonGroup } from 'react-bootstrap'
+import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
-export const BackEnd = () => {
+export const Backend = () => {
   const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
-    <Slide inProp={slide === 'BackEnd'}>
+    <Slide inProp={slide === 'Backend'}>
       <div>
-        <h2>Back End</h2>
+        <h2>Backend</h2>
 
         <p>
-          Although I started more as a front end dev, I've always had some back
+          Although I started more as a frontend dev, I've always had some back
           end work to do as well. In recent years, more work than I had on the
-          front end. I've written basic PHP content management systems and REST
+          frontend. I've written basic PHP content management systems and REST
           web services, maintained a Ruby on Rails CMS, then moved on to work on
           a Java EE ERP (Java 1.6).
         </p>

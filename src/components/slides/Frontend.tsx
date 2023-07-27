@@ -1,19 +1,19 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
-import { SlideContext } from '../../pages/index'
 import { Button, ButtonGroup } from 'react-bootstrap'
+import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
-export const FrontEnd = () => {
+export const Frontend = () => {
   const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
-    <Slide inProp={slide === 'FrontEnd'}>
+    <Slide inProp={slide === 'Frontend'}>
       <div>
-        <h2>Front End</h2>
+        <h2>Frontend</h2>
 
         <p>
-          In the last few years, most of my work has been to back end API's and
+          In the last few years, most of my work has been to backend API's and
           integrations (except for a one year experience with Angular), but I've
           started studying and working on personal projects with Angular, React,
           Redux, Vue, Typescript to avoid losing track of everything that has
@@ -26,12 +26,13 @@ export const FrontEnd = () => {
           one was a POC comparing React Native with Ionic.
         </p>
         <p>
-          Moving into javascript back end, I've studied and written small apps
-          using{' '}
+          Moving into Node.js, I've studied and written apps using Express with
+          Mongoose, a few middlewares and Apollo GraphQL. My first experience
+          being a{' '}
           <a href='https://github.com/hruzeda/simplecms' target='_blank'>
-            Express with Mongoose
-          </a>
-          , a few middlewares and Apollo GraphQL.
+            Simple CMS
+          </a>{' '}
+          I created based on a PHP template I used back on 2012.
         </p>
 
         <div className='text-center'>
