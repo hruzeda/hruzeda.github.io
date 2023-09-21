@@ -79,7 +79,7 @@ dependencies:
     version: 4.16.0(@types/node@17.0.42)(babel-eslint@10.1.0)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.3)
   gatsby-plugin-manifest:
     specifier: ^4.16.0
-    version: 4.16.0(gatsby@4.16.0)(graphql@16.5.0)
+    version: 4.16.0(gatsby@4.16.0)(graphql@16.8.1)
   gatsby-plugin-pnpm:
     specifier: ^1.2.10
     version: 1.2.10(gatsby@4.16.0)
@@ -99,8 +99,8 @@ dependencies:
     specifier: ^4.0.0
     version: 4.0.0
   graphql:
-    specifier: ^16.5.0
-    version: 16.5.0
+    specifier: ^16.8.1
+    version: 16.8.1
   prettier:
     specifier: ^2.6.2
     version: 2.6.2
@@ -4620,7 +4620,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       dot-prop: 5.3.0
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       make-dir: 3.1.0
       unique-string: 2.0.0
       write-file-atomic: 3.0.3
@@ -5395,7 +5395,7 @@ packages:
     resolution: {integrity: sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==}
     engines: {node: '>=10.13.0'}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       tapable: 2.2.1
     dev: false
 
@@ -6382,7 +6382,7 @@ packages:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.0
     dev: false
@@ -6591,7 +6591,7 @@ packages:
       '@parcel/transformer-react-refresh-wrap': 2.6.0(@parcel/core@2.6.0)
     dev: false
 
-  /gatsby-plugin-manifest@4.16.0(gatsby@4.16.0)(graphql@16.5.0):
+  /gatsby-plugin-manifest@4.16.0(gatsby@4.16.0)(graphql@16.8.1):
     resolution: {integrity: sha512-hGRFxJeC9j+f2JG9WkkKEjbnP3Gq4FOKzcTmKUt4iZ8DnY+BcDaBEqAm9wrlk4yCqLR6AL/ZGnB6AkG6j7twjQ==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -6600,7 +6600,7 @@ packages:
       '@babel/runtime': 7.18.3
       gatsby: 4.16.0(@types/node@17.0.42)(babel-eslint@10.1.0)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.3)
       gatsby-core-utils: 3.16.0
-      gatsby-plugin-utils: 3.10.0(gatsby@4.16.0)(graphql@16.5.0)
+      gatsby-plugin-utils: 3.10.0(gatsby@4.16.0)(graphql@16.8.1)
       semver: 7.3.7
       sharp: 0.30.6
     transitivePeerDependencies:
@@ -6748,7 +6748,7 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /gatsby-plugin-utils@3.10.0(gatsby@4.16.0)(graphql@16.5.0):
+  /gatsby-plugin-utils@3.10.0(gatsby@4.16.0)(graphql@16.8.1):
     resolution: {integrity: sha512-/K6frqNRwmSznUnjWD3Isk5wEj56zLrygfAdlBYVLd6XfAHK18sPJBaIi+Gpno4pNaSMuu10x+OxPmSIjE0X7g==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -6762,8 +6762,8 @@ packages:
       gatsby: 4.16.0(@types/node@17.0.42)(babel-eslint@10.1.0)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.3)
       gatsby-core-utils: 3.16.0
       gatsby-sharp: 0.10.0
-      graphql: 16.5.0
-      graphql-compose: 9.0.8(graphql@16.5.0)
+      graphql: 16.8.1
+      graphql-compose: 9.0.8(graphql@16.8.1)
       import-from: 4.0.0
       joi: 17.6.0
       mime: 3.0.0
@@ -7273,13 +7273,13 @@ packages:
       graphql-type-json: 0.3.2(graphql@15.8.0)
     dev: false
 
-  /graphql-compose@9.0.8(graphql@16.5.0):
+  /graphql-compose@9.0.8(graphql@16.8.1):
     resolution: {integrity: sha512-I3zvygpVz5hOWk2cYL6yhbgfKbNWbiZFNXlWkv/55U+lX6Y3tL+SyY3zunw7QWrN/qtwG2DqZb13SHTv2MgdEQ==}
     peerDependencies:
       graphql: ^14.2.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      graphql: 16.5.0
-      graphql-type-json: 0.3.2(graphql@16.5.0)
+      graphql: 16.8.1
+      graphql-type-json: 0.3.2(graphql@16.8.1)
     dev: false
 
   /graphql-config@3.4.1(@types/node@17.0.42)(graphql@15.8.0)(typescript@4.7.3):
@@ -7341,12 +7341,12 @@ packages:
       graphql: 15.8.0
     dev: false
 
-  /graphql-type-json@0.3.2(graphql@16.5.0):
+  /graphql-type-json@0.3.2(graphql@16.8.1):
     resolution: {integrity: sha512-J+vjof74oMlCWXSvt0DOf2APEdZOCdubEvGDUAlqH//VBYcOYsGgRW7Xzorr44LvkjiuvecWc8fChxuZZbChtg==}
     peerDependencies:
       graphql: '>=0.8.0'
     dependencies:
-      graphql: 16.5.0
+      graphql: 16.8.1
     dev: false
 
   /graphql-ws@4.9.0(graphql@15.8.0):
@@ -7363,8 +7363,8 @@ packages:
     engines: {node: '>= 10.x'}
     dev: false
 
-  /graphql@16.5.0:
-    resolution: {integrity: sha512-qbHgh8Ix+j/qY+a/ZcJnFQ+j8ezakqPiHwPiZhV/3PgGlgf96QMBB5/f2rkiC9sgLoy/xvT6TSiaf2nTHJh5iA==}
+  /graphql@16.8.1:
+    resolution: {integrity: sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 
@@ -8090,7 +8090,7 @@ packages:
   /jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
     dev: false
 
   /jsonfile@6.1.0:
@@ -8098,7 +8098,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
     dev: false
 
   /jsx-ast-utils@3.3.0:
@@ -9806,7 +9806,7 @@ packages:
   /proper-lockfile@4.1.2:
     resolution: {integrity: sha512-TjNPblN4BwAWMXU8s9AEz4JmQxnD1NNL7bNOY/AKUzyamc379FWASUhc/K1pL2noVb+XmZKLL68cjzLsiOAMaA==}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       retry: 0.12.0
       signal-exit: 3.0.7
     dev: false
