@@ -40,7 +40,7 @@ export const Profile = () => {
           <Github />
         </a>{' '}
         <a
-          href='https://gitlab.com/hruzeda'
+          href='https://gitlab.com/ruzeda/isometric-uzeda/-/boards'
           target={'_blank'}
           className='btn btn-small btn-secondary'
         >
