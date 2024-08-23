@@ -1,15 +1,16 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
+import { Button, ButtonGroup } from 'react-bootstrap'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const Vue = () => {
-  const { slide } = React.useContext(SlideContext)
+  const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Vue'}>
       <div>
-        <h2>Vue</h2>
+        <h2>Vue.js</h2>
 
         <p>
           Back in 2020, when the pandemic started, I was working with a friend
@@ -26,10 +27,11 @@ export const Vue = () => {
           tables in the actual restaurant.
         </p>
         <p>
-          It was my first contact with Vue but, coming from a React background,
-          it was quite a smooth transition. I wrote high order components, Vue's
-          event emitting and context APIs and used a polling solution to keep
-          the UI syncronized with new orders coming from the back end.
+          It was my first contact with Vue.js but, coming from a React
+          background, it was quite a smooth transition. I wrote high order
+          components, Vue.js' event emitting and context APIs and used a polling
+          solution to keep the UI syncronized with new orders coming from the
+          backend.
         </p>
         <p>
           The user could manage tables, edit orders and, the trickiest feature I
@@ -43,6 +45,14 @@ export const Vue = () => {
           my friend could, eventually, also sell to restaurants in Canada where
           he lives now.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='primary' onClick={() => setSlide('Frontend')}>
+              Back
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

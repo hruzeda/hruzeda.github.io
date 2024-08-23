@@ -4,7 +4,7 @@ import { Button, ButtonGroup, Dropdown, SplitButton } from 'react-bootstrap'
 import { SlideContext } from '../pages/index'
 
 export const Navigation = () => {
-  const { slide, setSlide } = React.useContext(SlideContext)
+  const { setSlide } = React.useContext(SlideContext)
 
   return (
     <div className='text-center mt-2'>
@@ -17,10 +17,10 @@ export const Navigation = () => {
         </Button>
         <SplitButton
           as={ButtonGroup}
-          title='Front End'
+          title='Frontend'
           drop='end'
           variant='primary'
-          onClick={() => setSlide('FrontEnd')}
+          onClick={() => setSlide('Frontend')}
         >
           <Dropdown.Item
             as='button'
@@ -41,15 +41,15 @@ export const Navigation = () => {
             eventKey='3'
             onClick={() => setSlide('Vue')}
           >
-            Vue
+            Vue.js
           </Dropdown.Item>
         </SplitButton>
         <SplitButton
           as={ButtonGroup}
-          title='Back End'
+          title='Backend'
           drop='end'
           variant='primary'
-          onClick={() => setSlide('BackEnd')}
+          onClick={() => setSlide('Backend')}
         >
           <Dropdown.Item
             as='button'

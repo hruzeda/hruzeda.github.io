@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
+import { Button, ButtonGroup } from 'react-bootstrap'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const Angular = () => {
-  const { slide } = React.useContext(SlideContext)
+  const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Angular'}>
@@ -35,6 +36,14 @@ export const Angular = () => {
           service, storing the user's settings in the local storage to reuse in
           future calls and adding a few unit tests to cover all that new logic.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='primary' onClick={() => setSlide('Frontend')}>
+              Back
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

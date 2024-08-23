@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
+import { Button, ButtonGroup } from 'react-bootstrap'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const ReactSlide = () => {
-  const { slide } = React.useContext(SlideContext)
+  const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'React'}>
@@ -37,11 +38,11 @@ export const ReactSlide = () => {
           collegue. Functional components and react hooks weren't a thing yet.
         </p>
         <p>
-          On the following year, after lots of back end and infrastructure
+          On the following year, after various backend and infrastructure
           changes, the customer asked us to test third parties WebRTC SDKs with
           cross platfom solutions so they could drop the current mobile app and
-          maintain a single application. That was when I first used react hooks
-          and functional components.
+          maintain a single application. That was when react hooks and
+          functional components were starting to become the norm.
         </p>
         <p>
           I tested the React Native and Ionic solutions using Amazon Chime SDK,
@@ -52,8 +53,8 @@ export const ReactSlide = () => {
           feature which would require some platform specific code.
         </p>
         <p>
-          The client was satisfied and decided to go with Ionic, but the actual
-          development was postponed and hasn't started yet.
+          The client was satisfied and decided to go with Ionic, though the
+          actual development was postponed.
         </p>
         <p>
           While working on those projects, a friend of mine asked for my help in
@@ -64,17 +65,27 @@ export const ReactSlide = () => {
           that he has been working on for years now.
         </p>
         <p>
-          It's a simple application with only two forms, each one with lots of
-          inputs but, because it's meant for developers, every form has a JSON
-          tab they can switch to, where any changes made to the requests that
-          mock their own Web Services are synchronized back to the inputs.
+          It's a simple application with only two views, used to create request
+          samples that can be dynamically used for tests and demos. Each view
+          has lots of inputs and, because it's meant for developers, a JSON tab
+          the user can switch to, where any changes made are synchronized back
+          to the inputs.
         </p>
         <p>
-          I used Typescript, I18n, React Bootstrap and Styled Components to
-          write it, creating the component hierarchy using barrel exports. It
-          was also the first time I used the useContext and useRef hooks to be
+          I used TypeScript, I18n, React and Styled Components to write it,
+          creating the component hierarchy using barrel exports. It was also the
+          first time I didn't use React Bootstrap, and it was when I got
+          familiar with the useContext (instead of Redux) and useRef hooks to be
           able to clean and repopulate the JSON editor when there was a change.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='primary' onClick={() => setSlide('Frontend')}>
+              Back
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

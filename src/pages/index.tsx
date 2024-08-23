@@ -1,6 +1,7 @@
 import * as React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
 import { Col, Container } from 'react-bootstrap'
+import { Helmet } from 'react-helmet'
+import styled, { ThemeProvider } from 'styled-components'
 
 import {
   CustomCarousel,
@@ -28,7 +29,9 @@ const LeftNav = styled(Col)`
   }
 `
 
-const setter: React.Dispatch<React.SetStateAction<string>> = () => {}
+const setter: React.Dispatch<React.SetStateAction<string>> = () => {
+  /* placeholder */
+}
 export const SlideContext = React.createContext({
   slide: '',
   setSlide: setter
@@ -36,26 +39,32 @@ export const SlideContext = React.createContext({
 
 const IndexPage = () => {
   const [slide, setSlide] = React.useState('AboutMe')
+  const contextValues = React.useMemo(() => ({ slide, setSlide }), [slide])
 
   return (
-    <Wrapper>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Container>
-          <h1 className='mb-2'>Henrique Uzêda</h1>
-          <SlideContext.Provider value={{ slide, setSlide }}>
-            <Inner>
-              <LeftNav xs='12' lg='3' className='align-self-center'>
-                <Profile />
-                <Navigation />
-              </LeftNav>
+    <>
+      <Helmet>
+        <title>Henrique Uzêda - Professional Profile</title>
+      </Helmet>
+      <Wrapper>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <Container>
+            <h1 className='mb-2'>Henrique Uzêda</h1>
+            <SlideContext.Provider value={contextValues}>
+              <Inner>
+                <LeftNav xs='12' lg='3' className='align-self-center'>
+                  <Profile />
+                  <Navigation />
+                </LeftNav>
 
-              <CustomCarousel />
-            </Inner>
-          </SlideContext.Provider>
-        </Container>
-      </ThemeProvider>
-    </Wrapper>
+                <CustomCarousel />
+              </Inner>
+            </SlideContext.Provider>
+          </Container>
+        </ThemeProvider>
+      </Wrapper>
+    </>
   )
 }
 

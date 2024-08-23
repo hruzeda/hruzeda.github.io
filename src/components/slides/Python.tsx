@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import { Slide } from '../CustomCarousel'
+import { Button, ButtonGroup } from 'react-bootstrap'
 import { SlideContext } from '../../pages/index'
+import { Slide } from '../CustomCarousel'
 
 export const Python = () => {
-  const { slide } = React.useContext(SlideContext)
+  const { slide, setSlide } = React.useContext(SlideContext)
 
   return (
     <Slide inProp={slide === 'Python'}>
@@ -28,9 +29,17 @@ export const Python = () => {
           planning pages, the delivery route and time estimate calculation
           (using Google Maps API) as well as the delivery settings pages. I also
           wrote some of the shopping cart's REST API, as well as other features
-          in the front end. Everything with unit test coverage and data
-          migration scripts.
+          in the frontend. Everything with unit test coverage and data migration
+          scripts.
         </p>
+
+        <div className='text-center'>
+          <ButtonGroup className='mt-4'>
+            <Button variant='primary' onClick={() => setSlide('Backend')}>
+              Back
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </Slide>
   )

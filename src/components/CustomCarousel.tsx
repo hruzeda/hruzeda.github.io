@@ -2,9 +2,9 @@ import * as React from 'react'
 import { Col } from 'react-bootstrap'
 import styled from 'styled-components'
 
-import * as Slides from './slides'
 import { theme } from '../theme/global'
 import { CustomTransition } from './CustomTransition'
+import * as Slides from './slides'
 
 export const Slide = styled(CustomTransition)``
 
@@ -50,11 +50,11 @@ export const CustomCarousel = () => {
     <TallDiv xs='12' lg='9' className='align-items-center'>
       <Slides.AboutMe />
       <Slides.Experiences />
-      <Slides.FrontEnd />
+      <Slides.Frontend />
       <Slides.Angular />
       <Slides.ReactSlide />
       <Slides.Vue />
-      <Slides.BackEnd />
+      <Slides.Backend />
       <Slides.Java />
       <Slides.Python />
     </TallDiv>

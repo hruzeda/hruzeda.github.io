@@ -48,11 +48,14 @@ $table-variants: (
   'dark': $dark
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share:wght@400;700&display=swap');
-$font-family-sans-serif: 'Share Tech Mono';
-$font-family-monospace: 'Share Tech Mono';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+$font-family-sans-serif: 'JetBrains Mono', monospace;
+$font-family-monospace: 'JetBrains Mono', monospace;
 $font-size-base: 1rem; // Assumes the browser default, typically 16px
 
+* {
+  font-optical-sizing: auto;
+}
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/utilities';
