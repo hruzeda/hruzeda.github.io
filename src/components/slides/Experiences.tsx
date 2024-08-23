@@ -17,8 +17,7 @@ export const Experiences = () => {
           <a href='https://github.com/hruzeda/phpcms' target='_blank'>
             PHP
           </a>{' '}
-          templates to different Photoshop layouts and frontend has been my
-          passion ever since.
+          templates to different Photoshop layouts.
         </p>
         <p>
           Using MySQL, I learned how the basic CRUD requests worked and how to

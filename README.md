@@ -1,13 +1,16 @@
 # Who Am I:
 
-I started working with simple website layouts in HTML and CSS back in 2010. Since then, I have worked with lots of other languages like PHP, Ruby, Python, Java and frameworks like Rails, Django, Struts and Spring.
+Starting in 2010, I have spent the last 15 years working with multiple technology stacks, including Java, Python, PHP, Ruby, and JavaScript, as well as popular frameworks like Next.js, Rails, Django, Spring, and FastAPI.
 
-In the last 6 months, I've been working for B-Yond helping maintain their backend services, frotend app and end to end tests using Javascript, Python and a little bit of Scala.
-Before that, I've worked for five years outsourced to an audio conferencing company as an extension of their development team. We worked with Java EE apps, keeping them up to date with new features and standards and replacing legacy apps.
+I am also experienced in writing various types of tests and simulators, setting up CI pipelines, creating Docker/Compose scripts, and building Grafana/Splunk dashboards, among many other tasks.
+
+In the past few years, I worked for [B-Yond](https://www.b-yond.com/) helping to maintain their network diagnostic tool (called Agility) using TypeScript, React, Next.js, Python, and FastAPI.
+
+One recent project I worked on was a SQL Query Writer LLM app that used LangChain, OpenAI, and a template prompt to answer complex user queries.
 
 # Experiences and projects:
 
-I started programming in an advertising agency back in 2010 customizing [PHP](https://github.com/hruzeda/phpcms) templates to different Photoshop layouts and frontend has been my passion ever since.
+I started programming in an advertising agency back in 2010 customizing [PHP](https://github.com/hruzeda/phpcms) templates to different Photoshop layouts.
 
 Using MySQL, I learned how the basic CRUD requests worked and how to consume Web Services via REST and SOAP to integrate with payment systems like PayPal.
 
