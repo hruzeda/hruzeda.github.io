@@ -66,7 +66,7 @@ const IndexPage = () => {
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <Container>
-            <h1 className='mb-2'>Henrique Uzêda</h1>
+            <h1>Henrique Uzêda</h1>
             <SlideContext.Provider value={contextValues}>
               <Inner>
                 <LeftNav xs='12' lg='3' className='align-self-center'>

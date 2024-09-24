@@ -6,7 +6,8 @@ import { theme } from '../theme/global'
 
 export const Inner = styled(Row)`
   background: ${theme.containerBg};
-  box-shadow: 0 2px 4px ${theme.containerBgDark};
+  box-shadow: 0 -3px ${theme.containerBgDark},
+    0 1px 2px ${theme.containerBgLight};
   color: #eee;
   text-shadow: 0.5px 0.5px 4px ${theme.containerBgDark};
 

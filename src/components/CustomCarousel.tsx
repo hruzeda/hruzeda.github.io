@@ -5,11 +5,12 @@ import styled from 'styled-components'
 import { theme } from '../theme/global'
 import { CustomTransition } from './CustomTransition'
 import * as Slides from './slides'
+import { SlideContext } from '../pages'
 
 export const Slide = styled(CustomTransition)``
 
 const TallDiv = styled(Col)`
-  padding: 25px 25px 25px 30px;
+  padding: 25px 50px 25px 30px;
 
   @media (min-width: 992px) {
     height: auto;
@@ -17,7 +18,6 @@ const TallDiv = styled(Col)`
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    scrollbar-width: thin;
   }
 
   &::-webkit-scrollbar {
@@ -46,8 +46,15 @@ const TallDiv = styled(Col)`
 `
 
 export const CustomCarousel = () => {
+  const { slide } = React.useContext(SlideContext)
+  const ref = React.useRef<HTMLDivElement>(null)
+
+  React.useEffect(() => {
+    if (ref.current) ref.current.scrollTop = 0
+  }, [slide])
+
   return (
-    <TallDiv xs='12' lg='9' className='align-items-center'>
+    <TallDiv xs='12' lg='9' className='align-items-center' ref={ref}>
       <Slides.AboutMe />
       <Slides.Experiences />
       <Slides.Frontend />

@@ -3,15 +3,15 @@ import { createGlobalStyle } from 'styled-components'
 import './theme.scss'
 
 export const theme = {
-  primary: '#F23030',
-  primaryDark: '#731717',
+  primary: '#F2CB05',
+  primaryDark: '#768b31',
   secondary: '#386B46',
   secondaryDark: '#2A5235',
-  tertiary: '#F2CB05',
-  tertiaryDark: '#736002',
   containerBg: '#403B39',
   containerBgDark: '#332F2D',
-  containerBgLight: '#CCBCB6'
+  containerBgLight: '#CCBCB6',
+  light: '#f8f9fa',
+  dark: '#212529'
 }
 
 export const GlobalStyle = createGlobalStyle`

@@ -14,15 +14,16 @@ export const Wrapper = styled.div`
     padding-bottom: 25px;
 
     @media (min-width: 992px) {
-      overflow: hidden;
+      overflow: visible;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
     }
 
     h1 {
-      color: #eee;
-      text-shadow: 0.5px 0.5px 4px ${theme.containerBgDark};
+      color: ${theme.light};
+      font-size: ${Math.PI}rem;
+      margin: 0 0 1.5rem 0.75rem;
 
       @media (max-width: 991px) {
         padding-top: 25px;
