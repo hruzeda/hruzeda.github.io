@@ -67,7 +67,7 @@ export const Java = () => {
 
         <div className='text-center'>
           <ButtonGroup className='mt-4'>
-            <Button variant='primary' onClick={() => setSlide('Backend')}>
+            <Button variant='primary' onClick={() => setSlide('')}>
               Back
             </Button>
           </ButtonGroup>

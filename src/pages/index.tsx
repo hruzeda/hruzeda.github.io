@@ -34,12 +34,28 @@ const setter: React.Dispatch<React.SetStateAction<string>> = () => {
 }
 export const SlideContext = React.createContext({
   slide: '',
-  setSlide: setter
+  setSlide: setter,
+  prevSlide: ''
 })
 
 const IndexPage = () => {
   const [slide, setSlide] = React.useState('AboutMe')
-  const contextValues = React.useMemo(() => ({ slide, setSlide }), [slide])
+  const [prevSlide, setPrevSlide] = React.useState('')
+
+  const wrapper = (newSlide: React.SetStateAction<string>) => {
+    if (newSlide === '') {
+      setSlide(prevSlide)
+      setPrevSlide('')
+    } else {
+      setPrevSlide(slide)
+      setSlide(newSlide)
+    }
+  }
+
+  const contextValues = React.useMemo(
+    () => ({ slide, setSlide: wrapper, prevSlide }),
+    [slide]
+  )
 
   return (
     <>

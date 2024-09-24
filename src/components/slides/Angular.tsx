@@ -39,7 +39,7 @@ export const Angular = () => {
 
         <div className='text-center'>
           <ButtonGroup className='mt-4'>
-            <Button variant='primary' onClick={() => setSlide('Frontend')}>
+            <Button variant='primary' onClick={() => setSlide('')}>
               Back
             </Button>
           </ButtonGroup>
