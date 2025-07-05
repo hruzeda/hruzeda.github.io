@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        input[type="number"] {
+            display: block;
+            padding: 5px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        math {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        const { createApp, ref, computed } = Vue
+
+        createApp({
+            setup() {
+                const level = ref(89)
+                const armor = ref(56)
+                const defense = ref(43)
+                const shieldingSkill = ref(70)
+                const monsterDamage = ref(500)
+                const stanceFactor = ref(5)
+
+                const step = computed(() => {
+                    return Math.floor((Math.sqrt(2 * level.value + 2025) + 5) / 10)
+                })
+
+                const baseDamage = computed(() => {
+                    return Math.floor((level.value + 1000) / step.value + 50 * step.value - 450)
+                })
+
+                const minArmReduction = computed(() => {
+                    return Math.floor(armor.value / 2)
+                })
+
+                const maxArmReduction = computed(() => {
+                    return Math.floor(minArmReduction.value * 2 - 1)
+                })
+
+                const defenseReduction = computed(() => {
+                    return Math.floor(defense.value * shieldingSkill.value * (stanceFactor.value / 100))
+                })
+
+                return {
+                    level,
+                    armor,
+                    defense,
+                    shieldingSkill,
+                    monsterDamage,
+                    stanceFactor,
+                    step,
+                    baseDamage,
+                    minArmReduction,
+                    maxArmReduction,
+                    stanceFactor,
+                    defenseReduction
+                }
+            },
+            template: `
+<h1>Tibia Formulaes Calculator</h1>
+
+<h2>Healing and Damage Bonus Per Level</h2>
+
+<p>
+    The step size S, or how many levels it takes to gain 1 base damage and healing,
+    is calculated as follows, based on your level L:
+</p>
+<label>Level:</label>
+<input type="number" v-model="level" />
+<math>
+    <mi>S</mi>
+    <mo>=</mo>
+    <mfrac>
+        <mrow>
+            <msqrt>
+                <mrow>
+                    <mn>2</mn>
+                    <mo>*</mo>
+                    <mi>{{ level }}</mi>
+                    <mo>+</mo>
+                    <mn>2025</mn>
+                </mrow>
+            </msqrt>
+            <mo>+</mo>
+            <mn>5</mn>
+        </mrow>
+        <mn>10</mn>
+    </mfrac>
+    <mo>=</mo>
+    <mi>{{ step }}</mi>
+</math>
+
+<p>
+    The total base damage and healing B as a function of your level L is calculated
+    as follows, using S from above:
+</p>
+<math>
+    <mi>B</mi>
+    <mo>=</mo>
+    <mfenced open="[" close="]">
+        <mfrac>
+            <mrow>
+                <mi>{{ level }}</mi>
+                <mo>+</mo>
+                <mn>1000</mn>
+            </mrow>
+            <mi>{{ step }}</mi>
+        </mfrac>
+    </mfenced>
+    <mo>+</mo>
+    <mn>50</mn>
+    <mo>*</mo>
+    <mi>{{ step }}</mi>
+    <mo>-</mo>
+    <mn>450</mn>
+    <mo>=</mo>
+    <mi>{{ baseDamage }}</mi>
+</math>
+
+<h2>Armor Reduction</h2>
+<label>Armor value:</label>
+<input type="number" v-model="armor" />
+<math>
+    <mi>r</mi>
+    <mo>=</mo>
+    <mfrac>
+        <mrow>
+            <mi>{{ armor }}</mi>
+        </mrow>
+        <mn>2</mn>
+    </mfrac>
+    <mo>=</mo>
+    <mi>{{ minArmReduction }}</mi>
+</math><br />
+<math>
+    <mi>R</mi>
+    <mo>=</mo>
+    <mi>{{ minArmReduction }}</mi>
+    <mo>*</mo>
+    <mn>2</mn>
+    <mo>-</mo>
+    <mn>1</mn>
+    <mo>=</mo>
+    <mi>{{ maxArmReduction }}</mi>
+</math>
+
+<h2>Defense Reduction</h2>
+<label>Defense value:</label>
+<input type="number" v-model="defense" />
+<label>Shielding skill:</label>
+<input type="number" v-model="shieldingSkill" />
+
+<math>
+    <mi>def</mi>
+    <mo>=</mo>
+    <mi>{{ defense }}</mi>
+    <mo>*</mo>
+    <mi>{{ shieldingSkill }}</mi>
+    <mo>*</mo>
+    <mfrac>
+        <mi>{{ stanceFactor }}</mi>
+        <mn>100</mn>
+    </mfrac>
+    <mo>=</mo>
+    <mi>{{ defenseReduction }}</mi>
+</math>
+
+<p><input type="radio" v-model="stanceFactor" value="5" /> Full Attack: 5</p>
+<p><input type="radio" v-model="stanceFactor" value="7" /> Balanced Attack: 7</p>
+<p><input type="radio" v-model="stanceFactor" value="10" /> Full Defense: 10</p>
+
+<h2>Monster Damage Calculation</h2>
+<label>Monster damage:</label>
+<input type="number" v-model="monsterDamage" />
+<p>
+    The final damage for up to 2 monsters should be between:
+</p>
+<p>{{ Math.max(0, monsterDamage - defenseReduction - maxArmReduction) }} - {{ Math.max(0, monsterDamage - defenseReduction - minArmReduction) }}</p>
+
+<p>
+    The final damage for the 3rd monster and beyond should be:
+</p>
+<p>Min: {{ Math.max(0, monsterDamage - maxArmReduction) }} - {{ Math.max(0, monsterDamage - minArmReduction) }}</p>
+`
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
